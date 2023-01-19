@@ -23,3 +23,4 @@ WORKDIR /var/lib/gitea/
 COPY /app.ini /etc/app.ini
 EXPOSE 22 3000
 USER 1000
+CMD ["/var/lib/gitea/gitea", "web"]
